@@ -21,9 +21,7 @@ public class Ball : MonoBehaviour {
 	public float turnSpeed = 90f;
 	/*Vector describing ball movement*/
 	protected Vector3 move = Vector3.zero;
-	/*Renderer for changing ball color/material etc */
-	public Renderer renderer;
-
+	
 	public virtual void setballSpeed(float newSpeed) {
 		this.ballSpeed = newSpeed;
 	}
@@ -35,17 +33,12 @@ public class Ball : MonoBehaviour {
 	 */ 
 	public virtual void Start () {
 		controller = GetComponent<CharacterController> ();
-		renderer = GetComponent<Renderer>();
 		
 		if (!controller) {
 			Debug.LogError ("Character controller not assigned");
 			enabled = false;
 		}
 
-		if (!renderer) {
-			Debug.LogWarning ("Renderer is not assigned to ball");
-			enabled = false;
-		}
 		/* script will be executed */
 		enabled = true;		
 	}
@@ -76,13 +69,8 @@ public class Ball : MonoBehaviour {
 			transform.position += Vector3.down * speed * Time.deltaTime;	 
 		}
 
-		if (Input.GetKey(KeyCode.Space)){
-			renderer.material.color = Color.black;
-		}
 		if (Input.GetKey (KeyCode.R)) {
 			Application.LoadLevel(Application.loadedLevel);
 		}
 	}
-
-	
 }
