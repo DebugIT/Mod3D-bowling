@@ -11,7 +11,8 @@ public class BallMovement : Ball {
 	private Vector3 mouseStartpoint;
 	private Vector3 mouseEndPoint;
 	private float distance;
-
+	private float mouseButtonPressedTime = 0.0f;
+	private float totalButtonPressedTime = 0.0f;
 
 	// Use this for initialization
 	public override void Start () {
@@ -39,6 +40,7 @@ public class BallMovement : Ball {
 		if(Input.GetMouseButtonDown(1))
 		{
 			mouseStartpoint = Input.mousePosition;
+			mouseButtonPressedTime = Time.time;
 		}
 		/* Calculating mouse drag as an initial step for applying speed to the ball */
 		if(Input.GetMouseButtonUp(1))
@@ -47,6 +49,9 @@ public class BallMovement : Ball {
 			distance = mouseEndPoint.y - mouseStartpoint.y;
 			applySpeed(distance);
 			Debug.Log("Mouse distance : " + distance);
+			totalButtonPressedTime = Time.time - mouseButtonPressedTime;
+			mouseButtonPressedTime = 0.0f;
+			Debug.Log("Mouse ppm pressed for : " + totalButtonPressedTime);
 		}
 
 		Camera.main.transform.forward = transform.forward;
