@@ -1,10 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * @Author Piotr Mścichowski
+ * 
+ * 
+ */
 public class BallMovement : Ball {
 
-	Vector3 start = Vector3.zero;
-	Vector3 end = Vector3.zero;
+	private Vector3 mouseStartpoint;
+	private Vector3 mouseEndPoint;
+	private float distance;
+
+
 	// Use this for initialization
 	public override void Start () {
 		base.Start ();
@@ -12,55 +20,47 @@ public class BallMovement : Ball {
 
 	// Update is called once per frame
 	public override void Update () {
-		//test ();
 
+		//set direction for mouse
 		if (Input.GetMouseButton (0)) {
 			transform.Rotate (0f, Input.GetAxis ("Mouse X") * turnSpeed * Time.deltaTime, 0f);
 		}
 
+		/*Setting direction on Z axis based on mouse */
 		if (Input.GetMouseButton (1)) {
 		
-				Vector3 moveStrength = new Vector3(0F, 0f,Mathf.Abs(-Input.GetAxis("Mouse X")) * Mathf.Abs(-Input.GetAxis("Mouse X")) * Time.deltaTime);
-			move = moveStrength;
+			Vector3 ballMoveVector = new Vector3(0F, 0f,Mathf.Abs(-Input.GetAxis("Mouse X")) * Mathf.Abs(-Input.GetAxis("Mouse X")) * Time.deltaTime);
+			move = ballMoveVector;
 
 			move.Normalize();
 			move = transform.TransformDirection (move);
 		}
 
-
-
-		//transform.Rotate (0f, Input.GetAxis ("Mouse X") * turnSpeed * Time.deltaTime, 0f);
-
-		//Vector3 moveStrength = new Vector3(Input.GetAxis("Mouse X") * turnSpeed * Time.deltaTime, 0f);
+		if(Input.GetMouseButtonDown(1))
+		{
+			mouseStartpoint = Input.mousePosition;
+		}
+		/* Calculating mouse drag as an initial step for applying speed to the ball */
+		if(Input.GetMouseButtonUp(1))
+		{
+			mouseEndPoint = Input.mousePosition;
+			distance = mouseEndPoint.y - mouseStartpoint.y;
+			applySpeed(distance);
+			Debug.Log("Mouse distance : " + distance);
+		}
 
 		Camera.main.transform.forward = transform.forward;
-
-		//move = new Vector3(Input.GetAxis ("Horizontal"), 0f, Input.GetAxis ("Vertical"));
-		
-		//move.Normalize();
-		
-		//move = transform.TransformDirection (move);
-
 
 		base.Update ();
 	}
 
-	/*void test() {
-		RaycastHit hit = new RaycastHit();
-		Vector3 distance = Vector3.zero;
-		
-		if (Input.GetMouseButtonDown (0)) {
-			if (Physics.Raycast (camera.ScreenPointToRay (Input.mousePosition), hit)) {
-				start = hit.point;
-			}
-		}
-		
-		if (Input.GetMouseButtonUp (0)) {
-			if (Physics.Raycast (camera.ScreenPointToRay (Input.mousePosition), hit)) {
-				end = hit.point;
-				distance = end - start;
-				Debug.Log ("Distance in X = " + Mathf.Abs (distance.x));
-			}
-		}
-	}*/
+	/**
+	 * Function setting initial ball speed 
+	 * @Param distance - float, mouse movement on axis Y
+	 * 
+	 */
+	private void applySpeed(float mouseDistance) {
+		float speed = mouseDistance / 100.0f;
+		base.setballSpeed (speed);
+	}
 }
