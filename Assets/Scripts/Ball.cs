@@ -76,9 +76,11 @@ public class Ball : MonoBehaviour {
 			transform.position += Vector3.down * speed * Time.deltaTime;	 
 		}
 
-		if (Input.GetKey(KeyCode.Space))
-		{
+		if (Input.GetKey(KeyCode.Space)){
 			renderer.material.color = Color.black;
+		}
+		if (Input.GetKey (KeyCode.R)) {
+			Application.LoadLevel(Application.loadedLevel);
 		}
 	}
 
