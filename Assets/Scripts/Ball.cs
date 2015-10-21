@@ -32,6 +32,7 @@ public class Ball : MonoBehaviour {
 	 * Initializes character controller
 	 */ 
 	public virtual void Start () {
+		/*First We want to try movement with character controller but finally probably there will be rigidbody due to force change ability etc. */
 		controller = GetComponent<CharacterController> ();
 		
 		if (!controller) {
