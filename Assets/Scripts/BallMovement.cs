@@ -2,25 +2,48 @@
 using System.Collections;
 
 /**
- * @Author Piotr Mścichowski
+ * \author Piotr Mścichowski
  * 
- * 
+ * \brief Derived class for extended controlling ball movement.
+ *
+ * This class enhances ball movement control by adding possibility to control movement
+ * by mouse, not only keyboard.
  */
 public class BallMovement : Ball {
 
+    /**
+     * Stores mouse position while starting movement with key pressed.
+     */
 	private Vector3 mouseStartpoint;
+
+    /**
+     * Stores mouse position on key up.
+     */
 	private Vector3 mouseEndPoint;
+
+    /**
+     * Distance
+     */
 	private float distance;
 	private float mouseButtonPressedTime = 0.0f;
 	private float totalButtonPressedTime = 0.0f;
 
-	// Use this for initialization
+	/**
+     * It simply calls parent method.
+     */
 	public override void Start () {
 		base.Start ();
 	}
 
-	// Update is called once per frame
-	public override void Update () {
+    /**
+     * \brief This method is called for every frame.
+     *
+     * If left mouse button is pressed, mouse controls direction in which ball aims.
+     * When right mouse key goes down, it stores initial mouse position and starting time.
+     * When it goes up, final mouse position is stored and time difference is calculated.
+     * Calculated values are then applied to ball movement controller. 
+     */
+    public override void Update () {
 
 		//set direction for mouse
 		if (Input.GetMouseButton (0)) {
@@ -62,7 +85,6 @@ public class BallMovement : Ball {
 	/**
 	 * Function setting initial ball speed 
 	 * @Param distance - float, mouse movement on axis Y
-	 * 
 	 */
 	private void applySpeed(float mouseDistance) {
 		float speed = mouseDistance / 100.0f;
