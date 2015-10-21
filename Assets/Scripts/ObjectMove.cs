@@ -3,18 +3,16 @@ using System.Collections;
 
 public class ObjectMove : MonoBehaviour {
 
-    public Renderer renderer;
+    public Renderer ren;
 
-    // Use this for initialization
-	void Start () {
-        renderer = GetComponent<Renderer>();
+    void Start () {
+        ren = GetComponent<Renderer>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    void Update () {
         if (Input.GetKey(KeyCode.Space))
         {
-            renderer.material.color = Color.black;
+            ren.material.color = Color.black;
             // Change color
         }
         if (Input.GetMouseButton(1))
