@@ -12,16 +12,11 @@ public class PinBehaviour1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//pinBody.AddRelativeForce (Vector3.left * 2);
+		pinBody.MovePosition(transform.position + (-transform.forward) * Time.deltaTime);
 
-		if (vecUp.y <= 10 && vecUp.y >= 0) {
-			vecUp = Vector3.up * 2;
-		}
-
-		if (vecUp.y < 0 && vecUp.y > 10) {
-			vecUp = Vector3. down * 2;
-		}
-
-		pinBody.MovePosition (transform.position +  (-transform.forward) * 4);
+		//pinBody.MovePosition (transform.forward * 20);
+		//pinBody.MovePosition (transform.position +  (-transform.forward) * 4);
 
 	}
 }
