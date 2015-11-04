@@ -6,7 +6,9 @@ using System.Collections;
  * \date 30.10.2015 created
  * \date 04.11.2015 last edited
  * 
- * Class discribing explosion of bowling pins connected with key event
+ * \brief Class discribing explosion of bowling pins connected with key event
+ * 
+ * This script adds explosion force to game object to move it.
  */
 public class PinFallDown : MonoBehaviour {
 
