@@ -3,6 +3,7 @@ using System.Collections;
 
 /**
  * \author Marek Nalepa
+ * \date 29.10.2015 created
  * 
  * \brief Class for switching cameras.
  *
@@ -12,8 +13,8 @@ using System.Collections;
  */
 public class CameraSwitch : MonoBehaviour {
 
-    public Camera[] cameras; // !< Stores all cameras defined in scene
-    public int camerasCount; // !< Stores number of all cameras in scene
+    public Camera[] cameras; //!< Stores all cameras defined in scene
+    public int camerasCount; //!< Stores number of all cameras in scene
 
     /**
      * \brief This method is called on script initialization.

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ball',['Ball',['../class_ball.html',1,'']]],
-  ['ballmovement',['BallMovement',['../class_ball_movement.html',1,'']]]
+  ['applyspeed',['applySpeed',['../class_ball_movement.html#ae6c4b64b5204f7fad36a124e9ccf0ed3',1,'BallMovement']]]
 ];
