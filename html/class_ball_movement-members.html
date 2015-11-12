@@ -38,7 +38,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -88,12 +90,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="class_ball_movement.html">BallMovement</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ballSpeed</b> (defined in <a class="el" href="class_ball.html">Ball</a>)</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>controller</b> (defined in <a class="el" href="class_ball.html">Ball</a>)</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>move</b> (defined in <a class="el" href="class_ball.html">Ball</a>)</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_ball.html#a655a2ac68857807d79d7b32c3dc46b19">setballSpeed</a>(float newSpeed)</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_ball_movement.html#a30553c43b5f0edb4ab0b3d1c4b269993">Start</a>()</td><td class="entry"><a class="el" href="class_ball_movement.html">BallMovement</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>turnSpeed</b> (defined in <a class="el" href="class_ball.html">Ball</a>)</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_ball_movement.html#ae6c4b64b5204f7fad36a124e9ccf0ed3">applySpeed</a>(float mouseDistance)</td><td class="entry"><a class="el" href="class_ball_movement.html">BallMovement</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_ball.html#a9f152c3ceba4ace75c2c87d73fc40cea">ballSpeed</a></td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_ball.html#af12ab5623475ce2fdd4ec6bb82b2a3e3">controller</a></td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_ball_movement.html#a8c0d83585a3a4a2e96642a8c34ff4c11">distance</a></td><td class="entry"><a class="el" href="class_ball_movement.html">BallMovement</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_ball_movement.html#ac379fc5e36f30e6d6c78a67d9996ca96">mouseButtonPressedTime</a></td><td class="entry"><a class="el" href="class_ball_movement.html">BallMovement</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_ball_movement.html#ace7b502fe56afc6512768fc4d629c707">mouseEndPoint</a></td><td class="entry"><a class="el" href="class_ball_movement.html">BallMovement</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_ball_movement.html#a100dfad7f752204a718ce02cbae721ee">mouseStartpoint</a></td><td class="entry"><a class="el" href="class_ball_movement.html">BallMovement</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_ball.html#a4fa4815ebae31c377b851144151c9f3d">move</a></td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_ball.html#a655a2ac68857807d79d7b32c3dc46b19">setballSpeed</a>(float newSpeed)</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_ball_movement.html#a30553c43b5f0edb4ab0b3d1c4b269993">Start</a>()</td><td class="entry"><a class="el" href="class_ball_movement.html">BallMovement</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_ball_movement.html#a0e16b8ecec78b04d171795a5d27496c0">totalButtonPressedTime</a></td><td class="entry"><a class="el" href="class_ball_movement.html">BallMovement</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_ball.html#a7adb29497e06c56dc9dd0d55ded63aa2">turnSpeed</a></td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_ball_movement.html#adec04489bea52562cc6e1e0048c23bc7">Update</a>()</td><td class="entry"><a class="el" href="class_ball_movement.html">BallMovement</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->

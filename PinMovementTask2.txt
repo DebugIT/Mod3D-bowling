@@ -1,0 +1,6 @@
+/**
+ * \page Pins movement description
+ * Ruch kręgli w momencie zderzenia z kulą :
+ * Większość kręgli w momencie zderzenia z kula poruszać się będzie ruchem niejednostajnym. Kierunek ruchu będzie zależny od punktu przełożenia siły na obiekcie(miejsca zderzenia kuli lub innych kręgli z danym obiektem). Dodatkowo dwa najbardziej skrajne kręgle po obu stronach toru w momencie wykrycia kolizji odpadną z ruchem jednostajnym.
+ * Resetowanie kręgli, czyli przywrócenie wszystkich kręgli z powrotem, odbywać się będzie ruchem jednostajnym w dół, prostopadle do toru.
+ */

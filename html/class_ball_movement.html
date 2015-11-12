@@ -38,7 +38,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -83,6 +85,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_ball_movement-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">BallMovement Class Reference</div>  </div>
@@ -112,21 +116,35 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a655a2ac68857807d79d7b32c3dc46b19 inherit pub_methods_class_ball"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#a655a2ac68857807d79d7b32c3dc46b19">setballSpeed</a> (float newSpeed)</td></tr>
 <tr class="separator:a655a2ac68857807d79d7b32c3dc46b19 inherit pub_methods_class_ball"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae6c4b64b5204f7fad36a124e9ccf0ed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball_movement.html#ae6c4b64b5204f7fad36a124e9ccf0ed3">applySpeed</a> (float mouseDistance)</td></tr>
+<tr class="separator:ae6c4b64b5204f7fad36a124e9ccf0ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a100dfad7f752204a718ce02cbae721ee"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball_movement.html#a100dfad7f752204a718ce02cbae721ee">mouseStartpoint</a></td></tr>
+<tr class="separator:a100dfad7f752204a718ce02cbae721ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7b502fe56afc6512768fc4d629c707"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball_movement.html#ace7b502fe56afc6512768fc4d629c707">mouseEndPoint</a></td></tr>
+<tr class="separator:ace7b502fe56afc6512768fc4d629c707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0d83585a3a4a2e96642a8c34ff4c11"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball_movement.html#a8c0d83585a3a4a2e96642a8c34ff4c11">distance</a></td></tr>
+<tr class="separator:a8c0d83585a3a4a2e96642a8c34ff4c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac379fc5e36f30e6d6c78a67d9996ca96"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball_movement.html#ac379fc5e36f30e6d6c78a67d9996ca96">mouseButtonPressedTime</a> = 0.0f</td></tr>
+<tr class="separator:ac379fc5e36f30e6d6c78a67d9996ca96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e16b8ecec78b04d171795a5d27496c0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball_movement.html#a0e16b8ecec78b04d171795a5d27496c0">totalButtonPressedTime</a> = 0.0f</td></tr>
+<tr class="separator:a0e16b8ecec78b04d171795a5d27496c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_ball"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_ball')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_ball.html">Ball</a></td></tr>
-<tr class="memitem:af12ab5623475ce2fdd4ec6bb82b2a3e3 inherit pub_attribs_class_ball"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af12ab5623475ce2fdd4ec6bb82b2a3e3"></a>
-CharacterController&#160;</td><td class="memItemRight" valign="bottom"><b>controller</b></td></tr>
+<tr class="memitem:af12ab5623475ce2fdd4ec6bb82b2a3e3 inherit pub_attribs_class_ball"><td class="memItemLeft" align="right" valign="top">CharacterController&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#af12ab5623475ce2fdd4ec6bb82b2a3e3">controller</a></td></tr>
 <tr class="separator:af12ab5623475ce2fdd4ec6bb82b2a3e3 inherit pub_attribs_class_ball"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f152c3ceba4ace75c2c87d73fc40cea inherit pub_attribs_class_ball"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f152c3ceba4ace75c2c87d73fc40cea"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>ballSpeed</b> = 0.0f</td></tr>
+<tr class="memitem:a9f152c3ceba4ace75c2c87d73fc40cea inherit pub_attribs_class_ball"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#a9f152c3ceba4ace75c2c87d73fc40cea">ballSpeed</a> = 0.0f</td></tr>
 <tr class="separator:a9f152c3ceba4ace75c2c87d73fc40cea inherit pub_attribs_class_ball"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7adb29497e06c56dc9dd0d55ded63aa2 inherit pub_attribs_class_ball"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7adb29497e06c56dc9dd0d55ded63aa2"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>turnSpeed</b> = 90f</td></tr>
+<tr class="memitem:a7adb29497e06c56dc9dd0d55ded63aa2 inherit pub_attribs_class_ball"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#a7adb29497e06c56dc9dd0d55ded63aa2">turnSpeed</a> = 90f</td></tr>
 <tr class="separator:a7adb29497e06c56dc9dd0d55ded63aa2 inherit pub_attribs_class_ball"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_ball"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_ball')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_ball.html">Ball</a></td></tr>
-<tr class="memitem:a4fa4815ebae31c377b851144151c9f3d inherit pro_attribs_class_ball"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fa4815ebae31c377b851144151c9f3d"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> = Vector3.zero</td></tr>
+<tr class="memitem:a4fa4815ebae31c377b851144151c9f3d inherit pro_attribs_class_ball"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#a4fa4815ebae31c377b851144151c9f3d">move</a> = Vector3.zero</td></tr>
 <tr class="separator:a4fa4815ebae31c377b851144151c9f3d inherit pro_attribs_class_ball"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -134,6 +152,31 @@ Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> = Vector3
 <dl class="section author"><dt>Author</dt><dd>Piotr Mścichowski</dd></dl>
 <p>This class enhances ball movement control by adding possibility to control movement by mouse, not only keyboard. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae6c4b64b5204f7fad36a124e9ccf0ed3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BallMovement.applySpeed </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>mouseDistance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function setting initial ball speed  distance - float, mouse movement on axis Y </p>
+
+</div>
+</div>
 <a class="anchor" id="a30553c43b5f0edb4ab0b3d1c4b269993"></a>
 <div class="memitem">
 <div class="memproto">
@@ -188,8 +231,112 @@ Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> = Vector3
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a8c0d83585a3a4a2e96642a8c34ff4c11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BallMovement.distance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Distance </p>
+
+</div>
+</div>
+<a class="anchor" id="ac379fc5e36f30e6d6c78a67d9996ca96"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BallMovement.mouseButtonPressedTime = 0.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ace7b502fe56afc6512768fc4d629c707"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 BallMovement.mouseEndPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Stores mouse position on key up. </p>
+
+</div>
+</div>
+<a class="anchor" id="a100dfad7f752204a718ce02cbae721ee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 BallMovement.mouseStartpoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Stores mouse position while starting movement with key pressed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0e16b8ecec78b04d171795a5d27496c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float BallMovement.totalButtonPressedTime = 0.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Assets/Scripts/BallMovement.cs</li>
+<li>Assets/Scripts/<a class="el" href="_ball_movement_8cs.html">BallMovement.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
