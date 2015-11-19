@@ -3,7 +3,7 @@ using System.Collections;
 
 /**
  * \author Piotr Mścichowski
- * 
+ * \ModifiedAt 19.11.2015
  * \brief Derived class for extended controlling ball movement.
  *
  * This class enhances ball movement control by adding possibility to control movement
@@ -55,8 +55,8 @@ public class BallMovement : Ball {
 		
 			Vector3 ballMoveVector = new Vector3(0F, 0f,Mathf.Abs(-Input.GetAxis("Mouse X")) * Mathf.Abs(-Input.GetAxis("Mouse X")) * Time.deltaTime);
 			move = ballMoveVector;
-
 			move.Normalize();
+
 			move = transform.TransformDirection (move);
 		}
 
@@ -77,7 +77,6 @@ public class BallMovement : Ball {
 			Debug.Log("Mouse ppm pressed for : " + totalButtonPressedTime);
 		}
 
-		Camera.main.transform.forward = transform.forward;
 
 		base.Update ();
 	}
