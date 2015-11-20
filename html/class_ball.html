@@ -38,7 +38,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -85,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_ball-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Ball Class Reference</div>  </div>
@@ -116,21 +119,22 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af12ab5623475ce2fdd4ec6bb82b2a3e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af12ab5623475ce2fdd4ec6bb82b2a3e3"></a>
-CharacterController&#160;</td><td class="memItemRight" valign="bottom"><b>controller</b></td></tr>
+<tr class="memitem:af12ab5623475ce2fdd4ec6bb82b2a3e3"><td class="memItemLeft" align="right" valign="top">CharacterController&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#af12ab5623475ce2fdd4ec6bb82b2a3e3">controller</a></td></tr>
 <tr class="separator:af12ab5623475ce2fdd4ec6bb82b2a3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f152c3ceba4ace75c2c87d73fc40cea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f152c3ceba4ace75c2c87d73fc40cea"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>ballSpeed</b> = 0.0f</td></tr>
+<tr class="memitem:a9f152c3ceba4ace75c2c87d73fc40cea"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#a9f152c3ceba4ace75c2c87d73fc40cea">ballSpeed</a> = 0.0f</td></tr>
 <tr class="separator:a9f152c3ceba4ace75c2c87d73fc40cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7adb29497e06c56dc9dd0d55ded63aa2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7adb29497e06c56dc9dd0d55ded63aa2"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>turnSpeed</b> = 90f</td></tr>
+<tr class="memitem:a7adb29497e06c56dc9dd0d55ded63aa2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#a7adb29497e06c56dc9dd0d55ded63aa2">turnSpeed</a> = 90f</td></tr>
 <tr class="separator:a7adb29497e06c56dc9dd0d55ded63aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a4fa4815ebae31c377b851144151c9f3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fa4815ebae31c377b851144151c9f3d"></a>
-Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> = Vector3.zero</td></tr>
+<tr class="memitem:a4fa4815ebae31c377b851144151c9f3d"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#a4fa4815ebae31c377b851144151c9f3d">move</a> = Vector3.zero</td></tr>
 <tr class="separator:a4fa4815ebae31c377b851144151c9f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:abb8bc4c20b6a86a599a20661acb9a516"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ball.html#abb8bc4c20b6a86a599a20661acb9a516">speed</a> = 1.0f</td></tr>
+<tr class="separator:abb8bc4c20b6a86a599a20661acb9a516"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Basic class describing prior settings and behaviour of ball. </p>
@@ -219,8 +223,85 @@ Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> = Vector3
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a9f152c3ceba4ace75c2c87d73fc40cea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Ball.ballSpeed = 0.0f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af12ab5623475ce2fdd4ec6bb82b2a3e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CharacterController Ball.controller</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4fa4815ebae31c377b851144151c9f3d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 Ball.move = Vector3.zero</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abb8bc4c20b6a86a599a20661acb9a516"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Ball.speed = 1.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7adb29497e06c56dc9dd0d55ded63aa2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Ball.turnSpeed = 90f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Assets/Scripts/Ball.cs</li>
+<li>Assets/Scripts/<a class="el" href="_ball_8cs.html">Ball.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
