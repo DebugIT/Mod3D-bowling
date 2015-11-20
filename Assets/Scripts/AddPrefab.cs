@@ -1,6 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * \author Piotr Mścichowski
+ * \date 19.11.2015 created
+ * \brief Class for adding prefabs pins.
+ *
+ * This script should be attached to prefab game object. 
+ * It waits for key button A, when it's pressed then prefab is added and destroyed 3s after being created to save memory.
+ *
+ */
 public class AddPrefab : MonoBehaviour {
 
 	// Use this for initialization
