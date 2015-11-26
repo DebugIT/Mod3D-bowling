@@ -1,0 +1,63 @@
+\hypertarget{class_ball_movement}{}\section{Ball\+Movement Class Reference}
+\label{class_ball_movement}\index{Ball\+Movement@{Ball\+Movement}}
+
+
+Derived class for extended controlling ball movement.  
+
+
+Inheritance diagram for Ball\+Movement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ball_movement}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_ball_movement_a30553c43b5f0edb4ab0b3d1c4b269993}{Start} ()
+\item 
+override void \hyperlink{class_ball_movement_adec04489bea52562cc6e1e0048c23bc7}{Update} ()
+\begin{DoxyCompactList}\small\item\em This method is called for every frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Derived class for extended controlling ball movement. 
+
+\begin{DoxyAuthor}{Author}
+Piotr Mścichowski  19.\+11.\+2015 This class enhances ball movement control by adding possibility to control movement by mouse, not only keyboard. 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ball_movement_a30553c43b5f0edb4ab0b3d1c4b269993}{}\index{Ball\+Movement@{Ball\+Movement}!Start@{Start}}
+\index{Start@{Start}!Ball\+Movement@{Ball\+Movement}}
+\subsubsection[{Start()}]{\setlength{\rightskip}{0pt plus 5cm}override void Ball\+Movement.\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_ball_movement_a30553c43b5f0edb4ab0b3d1c4b269993}
+It simply calls parent method. 
+
+Reimplemented from \hyperlink{class_ball_ac82387db69cc078a600870dba29a064c}{Ball}.
+
+\hypertarget{class_ball_movement_adec04489bea52562cc6e1e0048c23bc7}{}\index{Ball\+Movement@{Ball\+Movement}!Update@{Update}}
+\index{Update@{Update}!Ball\+Movement@{Ball\+Movement}}
+\subsubsection[{Update()}]{\setlength{\rightskip}{0pt plus 5cm}override void Ball\+Movement.\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_ball_movement_adec04489bea52562cc6e1e0048c23bc7}
+
+
+This method is called for every frame. 
+
+If left mouse button is pressed, mouse controls direction in which ball aims. When right mouse key goes down, it stores initial mouse position and starting time. When it goes up, final mouse position is stored and time difference is calculated. Calculated values are then applied to ball movement controller. 
+
+Reimplemented from \hyperlink{class_ball_a237aaf0107c7bf3d7812dc8a9a642593}{Ball}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\hyperlink{_ball_movement_8cs}{Ball\+Movement.\+cs}\end{DoxyCompactItemize}

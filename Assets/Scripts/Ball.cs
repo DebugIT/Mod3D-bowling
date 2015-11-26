@@ -18,7 +18,7 @@ public class Ball : MonoBehaviour {
     /*
      * Character controller object chosen to adjust linear move to the ball
      */
-	public CharacterController controller;
+	public Rigidbody controller;
 	
     /*
      * Ball speed before movement
@@ -53,7 +53,7 @@ public class Ball : MonoBehaviour {
          * First We want to try movement with character controller but finally probably
          * there will be rigidbody due to force change ability etc.
          */
-		controller = GetComponent<CharacterController> ();
+		controller = GetComponent<Rigidbody> ();
 		
 		if (!controller) {
 			Debug.LogError ("Character controller not assigned");
@@ -74,8 +74,9 @@ public class Ball : MonoBehaviour {
 		/**
          * For the begining choosing simple move mode
          */
-		controller.SimpleMove(move * ballSpeed );
-
+		//controller.SimpleMove(move * ballSpeed );
+		if (move != Vector3.zero)
+			controller.AddForce (move * ballSpeed);
 		if(Input.GetKey(KeyCode.LeftArrow)){
 			
 			transform.position += Vector3.left * speed * Time.deltaTime;

@@ -1,0 +1,93 @@
+\hypertarget{class_color_change}{}\section{Color\+Change Class Reference}
+\label{class_color_change}\index{Color\+Change@{Color\+Change}}
+
+
+Class for controlling object\textquotesingle{}s color change.  
+
+
+Inheritance diagram for Color\+Change\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_color_change}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_color_change_a7851038dd8fb7ee037e3572e5ea0820e}{Start} ()
+\begin{DoxyCompactList}\small\item\em This method is called on script initialization. \end{DoxyCompactList}\item 
+void \hyperlink{class_color_change_adcff0a9a82823d3e0c08ac2aa6dad8c6}{Update} ()
+\begin{DoxyCompactList}\small\item\em This method is called for every frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Renderer \hyperlink{class_color_change_a325e912ee57c39a0fa9187988dac05de}{ren}
+\item 
+Color\mbox{[}$\,$\mbox{]} \hyperlink{class_color_change_a82d62c6de3e5c99613d876af2de00627}{possible\+Colors}
+\item 
+int \hyperlink{class_color_change_a24d6e49ea48325fb5fb722bb80264339}{next\+Color}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for controlling object\textquotesingle{}s color change. 
+
+\begin{DoxyAuthor}{Author}
+Marek Nalepa
+\end{DoxyAuthor}
+This script can be attached to any game object. It provides possibility to change color of object on pressing space key. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_color_change_a7851038dd8fb7ee037e3572e5ea0820e}{}\index{Color\+Change@{Color\+Change}!Start@{Start}}
+\index{Start@{Start}!Color\+Change@{Color\+Change}}
+\subsubsection[{Start()}]{\setlength{\rightskip}{0pt plus 5cm}void Color\+Change.\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_color_change_a7851038dd8fb7ee037e3572e5ea0820e}
+
+
+This method is called on script initialization. 
+
+In initialization script aquires game object renderer and stores its reference to future use. Furthermore, the next color index is set to zero. Prevents script from running\hypertarget{class_color_change_adcff0a9a82823d3e0c08ac2aa6dad8c6}{}\index{Color\+Change@{Color\+Change}!Update@{Update}}
+\index{Update@{Update}!Color\+Change@{Color\+Change}}
+\subsubsection[{Update()}]{\setlength{\rightskip}{0pt plus 5cm}void Color\+Change.\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_color_change_adcff0a9a82823d3e0c08ac2aa6dad8c6}
+
+
+This method is called for every frame. 
+
+Scripts works when user presses space key. This method checks if space key is pressed down in current frame and assigns next color from array. It also increments next color index. Method does not change colors continuously while user holds space down, only when he first press it. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_color_change_a24d6e49ea48325fb5fb722bb80264339}{}\index{Color\+Change@{Color\+Change}!next\+Color@{next\+Color}}
+\index{next\+Color@{next\+Color}!Color\+Change@{Color\+Change}}
+\subsubsection[{next\+Color}]{\setlength{\rightskip}{0pt plus 5cm}int Color\+Change.\+next\+Color}\label{class_color_change_a24d6e49ea48325fb5fb722bb80264339}
+Index of next color to assign \hypertarget{class_color_change_a82d62c6de3e5c99613d876af2de00627}{}\index{Color\+Change@{Color\+Change}!possible\+Colors@{possible\+Colors}}
+\index{possible\+Colors@{possible\+Colors}!Color\+Change@{Color\+Change}}
+\subsubsection[{possible\+Colors}]{\setlength{\rightskip}{0pt plus 5cm}Color \mbox{[}$\,$\mbox{]} Color\+Change.\+possible\+Colors}\label{class_color_change_a82d62c6de3e5c99613d876af2de00627}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        Color.black,
+        Color.blue,
+        Color.cyan,
+        Color.gray,
+        Color.green,
+        Color.magenta,
+        Color.red,
+        Color.white,
+        Color.yellow
+    \}
+\end{DoxyCode}
+Set of possible colors \hypertarget{class_color_change_a325e912ee57c39a0fa9187988dac05de}{}\index{Color\+Change@{Color\+Change}!ren@{ren}}
+\index{ren@{ren}!Color\+Change@{Color\+Change}}
+\subsubsection[{ren}]{\setlength{\rightskip}{0pt plus 5cm}Renderer Color\+Change.\+ren}\label{class_color_change_a325e912ee57c39a0fa9187988dac05de}
+Game\+Object\textquotesingle{}s Renderer 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\hyperlink{_color_change_8cs}{Color\+Change.\+cs}\end{DoxyCompactItemize}
