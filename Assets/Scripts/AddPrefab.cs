@@ -2,7 +2,7 @@
 using System.Collections;
 
 /**
- * \author Piotr Mścichowski
+ * \author Marek Nalepa
  * \date 19.11.2015 created
  * \brief Class for adding prefabs pins.
  *

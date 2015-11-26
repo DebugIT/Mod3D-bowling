@@ -1,0 +1,104 @@
+\hypertarget{class_ball}{}\section{Ball Class Reference}
+\label{class_ball}\index{Ball@{Ball}}
+
+
+Basic class describing prior settings and behaviour of ball.  
+
+
+Inheritance diagram for Ball\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ball}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_ball_a655a2ac68857807d79d7b32c3dc46b19}{setball\+Speed} (float new\+Speed)
+\item 
+virtual void \hyperlink{class_ball_ac82387db69cc078a600870dba29a064c}{Start} ()
+\begin{DoxyCompactList}\small\item\em Initializes Character\+Controller. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_ball_a237aaf0107c7bf3d7812dc8a9a642593}{Update} ()
+\begin{DoxyCompactList}\small\item\em Describes basic control fro keyboard of ball. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Rigidbody \hyperlink{class_ball_ae623e52a072614fd991c767b315c56d7}{controller}
+\item 
+float \hyperlink{class_ball_a9f152c3ceba4ace75c2c87d73fc40cea}{ball\+Speed} = 0.\+0f
+\item 
+float \hyperlink{class_ball_a7adb29497e06c56dc9dd0d55ded63aa2}{turn\+Speed} = 90f
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \hyperlink{class_ball_a4fa4815ebae31c377b851144151c9f3d}{move} = Vector3.\+zero
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic class describing prior settings and behaviour of ball. 
+
+\begin{DoxyAuthor}{Author}
+Piotr Mścichowski 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_ball_a655a2ac68857807d79d7b32c3dc46b19}{}\index{Ball@{Ball}!setball\+Speed@{setball\+Speed}}
+\index{setball\+Speed@{setball\+Speed}!Ball@{Ball}}
+\subsubsection[{setball\+Speed(float new\+Speed)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Ball.\+setball\+Speed (
+\begin{DoxyParamCaption}
+\item[{float}]{new\+Speed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_ball_a655a2ac68857807d79d7b32c3dc46b19}
+Sets speed of object \hypertarget{class_ball_ac82387db69cc078a600870dba29a064c}{}\index{Ball@{Ball}!Start@{Start}}
+\index{Start@{Start}!Ball@{Ball}}
+\subsubsection[{Start()}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Ball.\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_ball_ac82387db69cc078a600870dba29a064c}
+
+
+Initializes Character\+Controller. 
+
+This method uses Character\+Component to provide basic movement functionality. It is planned to eventually use rigidbody due to force change ability etc. First We want to try movement with character controller but finally probably there will be rigidbody due to force change ability etc.
+
+Reimplemented in \hyperlink{class_ball_movement_a30553c43b5f0edb4ab0b3d1c4b269993}{Ball\+Movement}.
+
+\hypertarget{class_ball_a237aaf0107c7bf3d7812dc8a9a642593}{}\index{Ball@{Ball}!Update@{Update}}
+\index{Update@{Update}!Ball@{Ball}}
+\subsubsection[{Update()}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Ball.\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_ball_a237aaf0107c7bf3d7812dc8a9a642593}
+
+
+Describes basic control fro keyboard of ball. 
+
+It uses simple move mode. Movement of object is controlled by arrow keys (up, down, left, right). It also adds possibility to restart game by pressing R. For the begining choosing simple move mode
+
+Reimplemented in \hyperlink{class_ball_movement_adec04489bea52562cc6e1e0048c23bc7}{Ball\+Movement}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_ball_a9f152c3ceba4ace75c2c87d73fc40cea}{}\index{Ball@{Ball}!ball\+Speed@{ball\+Speed}}
+\index{ball\+Speed@{ball\+Speed}!Ball@{Ball}}
+\subsubsection[{ball\+Speed}]{\setlength{\rightskip}{0pt plus 5cm}float Ball.\+ball\+Speed = 0.\+0f}\label{class_ball_a9f152c3ceba4ace75c2c87d73fc40cea}
+\hypertarget{class_ball_ae623e52a072614fd991c767b315c56d7}{}\index{Ball@{Ball}!controller@{controller}}
+\index{controller@{controller}!Ball@{Ball}}
+\subsubsection[{controller}]{\setlength{\rightskip}{0pt plus 5cm}Rigidbody Ball.\+controller}\label{class_ball_ae623e52a072614fd991c767b315c56d7}
+\hypertarget{class_ball_a4fa4815ebae31c377b851144151c9f3d}{}\index{Ball@{Ball}!move@{move}}
+\index{move@{move}!Ball@{Ball}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}Vector3 Ball.\+move = Vector3.\+zero\hspace{0.3cm}{\ttfamily [protected]}}\label{class_ball_a4fa4815ebae31c377b851144151c9f3d}
+\hypertarget{class_ball_a7adb29497e06c56dc9dd0d55ded63aa2}{}\index{Ball@{Ball}!turn\+Speed@{turn\+Speed}}
+\index{turn\+Speed@{turn\+Speed}!Ball@{Ball}}
+\subsubsection[{turn\+Speed}]{\setlength{\rightskip}{0pt plus 5cm}float Ball.\+turn\+Speed = 90f}\label{class_ball_a7adb29497e06c56dc9dd0d55ded63aa2}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Scripts/\hyperlink{_ball_8cs}{Ball.\+cs}\end{DoxyCompactItemize}
