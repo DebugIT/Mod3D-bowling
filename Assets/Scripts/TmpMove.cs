@@ -4,6 +4,7 @@ using System.Collections;
 public class TmpMove : MonoBehaviour {
 
 	public Rigidbody body;
+	bool applyForce = true;
 	public bool moveLeft;
 	public bool moveRight;
 	public float radius = 3.0f;
@@ -18,17 +19,26 @@ public class TmpMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(moveLeft && !moveRight)
-			body.AddForce (Vector3.left * force);
-		else if (!moveLeft && moveRight)
-			body.AddForce (Vector3.right * force);
+		if (applyForce) {
+			if (moveLeft && !moveRight)
+				body.AddForce (Vector3.left * force);
+			else if (!moveLeft && moveRight)
+				body.AddForce (Vector3.right * force);
+		}
 	}
 
 	void OnCollisionEnter(Collision c) {
 		if (c.gameObject.tag == "pin") {
 			Debug.Log("Pinn colision");
-			body.AddForce(Vector3.forward *force);
-		//	body.AddExplosionForce (force, c.gameObject.transform.position, radius, up);
+			body.AddExplosionForce(force,Vector3.left, radius, up);
+			applyForce = false;
+			              
 		}
+	
+		if (c.gameObject.tag == "track") {
+			Debug.Log("kolizja z track");
+			body.AddExplosionForce(force, transform.position, radius, up);
+		}
+
 	}
 }
